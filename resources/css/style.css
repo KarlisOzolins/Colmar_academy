@@ -4,12 +4,24 @@ html {
     font-size: 16px;
     font-family: Arial, Helvetica, 'Arial Narrow', sans-serif;
     background-color: #fff;
+    box-sizing: border-box; 
 }
 
 strong {
     font-weight: 700;
     color:black;
     opacity: 0.75;
+}
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+
 }
 
 /* Header */
@@ -23,6 +35,7 @@ header {
     width:100%;
     position: fixed;
     z-index:100;
+    background-color: #fff;
 }
 
 header .content {
@@ -46,7 +59,7 @@ header .content {
     display: flex;
 }
 .logo img{
-    height: 2rem;
+    height: 2.2rem;
     width: auto;
     display: flex;
     flex: 1;
@@ -63,7 +76,7 @@ li .empty{
 
 /* HEADER MOBILE */
 
-@media only screen and (max-width:610px){
+@media only screen and (max-width:1200px){
     header .desktop{
         display: none;
     }
@@ -77,5 +90,94 @@ li .empty{
     nav ul{
         display: flex;
         justify-content: space-around;
+    }
+}
+
+/* Main content */
+
+
+/* First Chapter */
+.chapter-first {
+    background-color: #d8d8d8;
+}
+
+.chapter-first .content{
+    display: flex;
+    width: 100%;
+}
+
+.content .image-cont{
+    width: 60%;
+    margin: 2rem 1.5rem;
+    flex: 1;
+}
+.content .image-cont img{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.content .text-cont{
+    width: 40%;
+    margin: 8rem  1.5rem; 
+    color:#4a4a4a;
+    font-family: 'Open Sans';
+}
+.content .text-cont h1{
+    width: 21.75rem;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.content .text-cont h4{
+    width: 21.75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.content .button{
+    background-color:#4a4a4a;
+    width: 21.75rem;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+        
+.content .button h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width:1200px){
+    .content .button{
+        width: 21.75rem;
+        background-color:#9b9b9b;
+    }
+    .chapter-first .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content .image-cont{
+        width: 100%;
+        margin: 0;
+        flex: 1;
+    }
+    
+    .content .text-cont{
+        width: 100%;
+        margin: 2rem 1rem;
+    }
+    .content .text-cont h1{
+        margin-bottom: 2rem;
+    }
+    
+    .content .text-cont h4{
+        margin-bottom: 1.5rem;
     }
 }
