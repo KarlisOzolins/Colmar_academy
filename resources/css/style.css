@@ -76,7 +76,7 @@ li .empty{
 
 /* HEADER MOBILE */
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:960px){
     header .desktop{
         display: none;
     }
@@ -87,11 +87,15 @@ li .empty{
     .mobile nav{
         width: 100%;
     }
+    .mobile .content img{
+        height: 2.2rem;
+    }
     nav ul{
         display: flex;
         justify-content: space-around;
     }
 }
+
 
 /* Main content */
 
@@ -100,84 +104,83 @@ li .empty{
 .chapter-first {
     background-color: #d8d8d8;
 }
-
 .chapter-first .content{
+    font-family: 'Open Sans';
     display: flex;
-    width: 100%;
 }
 
 .content .image-cont{
-    width: 60%;
+    width:60%;
     margin: 2rem 1.5rem;
-    flex: 1;
 }
+
 .content .image-cont img{
-    width: 100%;
-    overflow: hidden;
-
+    width:100%;
+    overflow:hidden;
 }
-
 .content .text-cont{
-    width: 40%;
-    margin: 8rem  1.5rem; 
-    color:#4a4a4a;
-    font-family: 'Open Sans';
+    width:40%;
+    padding-left: 1rem;
+    margin:auto;
 }
+
 .content .text-cont h1{
-    width: 21.75rem;
-    font-size: 2.3rem;
-    line-height: 3rem;
+    width: 22rem;
+    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-weight: 800;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #4a4a4a;
 }
 
 .content .text-cont h4{
-    width: 21.75rem;
-    font-size: 1.2rem;
+    width: 22rem;
+    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-weight: 600;
-    line-height: 1.7rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 2rem 0;
+    color: #4a4a4a;
 }
-
-.content .button{
-    background-color:#4a4a4a;
-    width: 21.75rem;
-    padding: 0.5rem 0;
+.content .text-cont .button{
+    width: 22rem;
+    background-color: #4a4a4a;
+    color:#fefefe; 
+    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding:0.5rem 0;
     text-align: center;
 }
-        
-.content .button h5{
-    font-size: 1rem;
-    font-weight: 400;
-    color: white;
-    padding: 0.5rem;
-}
 
-@media only screen and (max-width:1200px){
-    .content .button{
-        width: 21.75rem;
-        background-color:#9b9b9b;
+/* First Chapter mobile*/
+
+@media only screen and (max-width:960px){
+    .content .text-cont .button{
+        background-color: #9b9b9b;
+        font-size: 1.2rem;
     }
     .chapter-first .content{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        display:block;
     }
     .content .image-cont{
-        width: 100%;
+        width:100%;
         margin: 0;
-        flex: 1;
     }
-    
     .content .text-cont{
-        width: 100%;
-        margin: 2rem 1rem;
+        width: 22rem;
+        padding:2rem 1rem;
+        justify-items: center;
     }
     .content .text-cont h1{
-        margin-bottom: 2rem;
+        line-height: 3.5rem;
     }
-    
-    .content .text-cont h4{
-        margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width:450px){
+    .content .text-cont{
+        width: 22rem;
+        padding:2rem 1rem;
     }
 }
