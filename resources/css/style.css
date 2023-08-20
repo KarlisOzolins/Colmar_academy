@@ -177,10 +177,3 @@ li .empty{
         line-height: 3.5rem;
     }
 }
-
-@media only screen and (max-width:450px){
-    .content .text-cont{
-        width: 22rem;
-        padding:2rem 1rem;
-    }
-}
