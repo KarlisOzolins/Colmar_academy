@@ -5,6 +5,12 @@ html {
     font-family: Arial, Helvetica, 'Arial Narrow', sans-serif;
     background-color: #fff;
     box-sizing: border-box; 
+    color: #4a4a4a;
+}
+
+main {
+    position: relative;
+    top: 4rem;
 }
 
 strong {
@@ -13,15 +19,48 @@ strong {
     opacity: 0.75;
 }
 
-main {
-    position: relative;
-    top: 4rem;
+.gray {
+    background-color: #d8d8d8;
 }
 
 h1{
-    font-size: 2rem;
-    font-weight: bold;
+    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: 800;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+}
 
+h2{
+    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: 800;
+    font-size: 2.1rem;
+    line-height: 3rem;
+}
+
+h3{
+    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+}
+h4{
+    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+h5{
+    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+p{
+    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
 }
 
 /* Header */
@@ -99,14 +138,12 @@ li .empty{
 
 /* Main content */
 
-
 /* First Chapter */
-.chapter-first {
-    background-color: #d8d8d8;
-}
+
 .chapter-first .content-1{
     font-family: 'Open Sans';
     display: flex;
+    flex: 1 1;
 }
 
 .content-1 .image-cont{
@@ -125,31 +162,19 @@ li .empty{
 }
 
 .content-1 .text-cont h1{
-    width: 22rem;
-    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    font-weight: 800;
-    font-size: 2.5rem;
-    line-height: 3rem;
+    width: 23rem;
     color: #4a4a4a;
 }
 
 .content-1 .text-cont h4{
     width: 22rem;
-    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin: 2rem 0;
     color: #4a4a4a;
+    margin: 2rem 0;
 }
 .content-1 .text-cont .button{
     width: 22rem;
     background-color: #4a4a4a;
     color:#fefefe; 
-    font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
     padding:0.5rem 0;
     text-align: center;
 }
@@ -179,3 +204,104 @@ li .empty{
 }
 
 /* Second Chapter mobile*/
+.mobile{
+    display: none;
+}
+.chapter-second{
+    display: flex;
+}
+
+.chapter-second h5{
+    font-weight: 600;
+}
+/* LEFT */
+
+.chapter-second .left{
+    width:60%;
+    padding: 2rem 1.5rem;
+    border-right: 2px solid #d8d8d8;
+}
+.chapter-second .left img {
+    width:100%;
+    overflow:hidden;
+    margin-bottom: 2rem;
+}
+
+.chapter-second .left .text-cont h2{
+    margin-bottom: 1.5rem;
+}
+.chapter-second .left .text-cont h5{
+    margin-top: 2rem;
+}
+
+
+/* RIGHT */
+.chapter-second .right{
+    width:40%;
+    margin: 1rem 0 2rem 0;
+
+}
+.chapter-second .right .content-item{
+    display:flex;
+}
+
+.chapter-second .right .text-cont{
+    width:65%;
+    margin:1rem;
+}
+.chapter-second .right .image-cont{
+    width:35%;
+    overflow:hidden;
+}
+.chapter-second .right img{
+    height:auto;
+    margin:1rem;
+}
+.chapter-second .content-item .text-cont{
+    margin:auto;
+    padding-left: 1.5rem;
+}
+.chapter-second .right .text-cont p{
+    margin: 1.5rem 0;
+}
+.chapter-second .right .text-cont h5{
+    color: #4d92e2;
+}
+
+
+@media only screen and (max-width:960px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .chapter-second .right{
+        width:100%;
+        margin:1rem;
+    }
+    .chapter-second .right .content-item{
+        display: block;
+        overflow: hidden;
+        background-color: white; 
+    }
+    .chapter-second .right img{
+        width: 100%;
+        margin:0;
+        overflow: hidden;
+    }
+    .chapter-second .right .text-cont{
+        width:100%;
+        padding-left: 1rem;
+        margin-bottom:2rem;
+    }
+    .chapter-second .right .image-cont{
+        width:100%;
+        margin:2rem 0;
+        overflow: hidden;
+    }
+    .chapter-second .right .text-cont h5{
+        color: #4d92e2;
+    }
+}
