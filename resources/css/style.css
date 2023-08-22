@@ -38,7 +38,7 @@ header {
     background-color: #fff;
 }
 
-header .content {
+header .content-0 {
     height: 4rem;
     display:flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ header .content {
     margin: 0 1.5rem;
 }
 
-.content .logo{
+.content-0 .logo{
     display:inline-flex;
 }
 
@@ -64,7 +64,7 @@ header .content {
     display: flex;
     flex: 1;
 }
-.content nav ul{
+.content-0 nav ul{
     display: flex;
     align-items: center;
 }
@@ -87,7 +87,7 @@ li .empty{
     .mobile nav{
         width: 100%;
     }
-    .mobile .content img{
+    .mobile .content-0 img{
         height: 2.2rem;
     }
     nav ul{
@@ -104,27 +104,27 @@ li .empty{
 .chapter-first {
     background-color: #d8d8d8;
 }
-.chapter-first .content{
+.chapter-first .content-1{
     font-family: 'Open Sans';
     display: flex;
 }
 
-.content .image-cont{
+.content-1 .image-cont{
     width:60%;
     margin: 2rem 1.5rem;
 }
 
-.content .image-cont img{
+.content-1 .image-cont img{
     width:100%;
     overflow:hidden;
 }
-.content .text-cont{
+.content-1 .text-cont{
     width:40%;
     padding-left: 1rem;
     margin:auto;
 }
 
-.content .text-cont h1{
+.content-1 .text-cont h1{
     width: 22rem;
     font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-weight: 800;
@@ -133,7 +133,7 @@ li .empty{
     color: #4a4a4a;
 }
 
-.content .text-cont h4{
+.content-1 .text-cont h4{
     width: 22rem;
     font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-weight: 600;
@@ -142,7 +142,7 @@ li .empty{
     margin: 2rem 0;
     color: #4a4a4a;
 }
-.content .text-cont .button{
+.content-1 .text-cont .button{
     width: 22rem;
     background-color: #4a4a4a;
     color:#fefefe; 
@@ -157,23 +157,25 @@ li .empty{
 /* First Chapter mobile*/
 
 @media only screen and (max-width:960px){
-    .content .text-cont .button{
+    .content-1 .text-cont .button{
         background-color: #9b9b9b;
         font-size: 1.2rem;
     }
-    .chapter-first .content{
+    .chapter-first .content-1{
         display:block;
     }
-    .content .image-cont{
+    .content-1 .image-cont{
         width:100%;
         margin: 0;
     }
-    .content .text-cont{
+    .content-1 .text-cont{
         width: 22rem;
         padding:2rem 1rem;
         justify-items: center;
     }
-    .content .text-cont h1{
+    .content-1 .text-cont h1{
         line-height: 3.5rem;
     }
 }
+
+/* Second Chapter mobile*/
