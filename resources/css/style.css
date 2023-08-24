@@ -4,7 +4,7 @@ html {
     font-size: 16px;
     font-family: Arial, Helvetica, 'Arial Narrow', sans-serif;
     background-color: #fff;
-    box-sizing: border-box; 
+    /*box-sizing: border-box;*/ 
     color: #4a4a4a;
 }
 
@@ -196,10 +196,15 @@ li .empty{
     .content-1 .text-cont{
         width: 22rem;
         padding:2rem 1rem;
-        justify-items: center;
+        /* justify-items: center; */
     }
     .content-1 .text-cont h1{
         line-height: 3.5rem;
+    }
+    .content-1 .text-cont .button{
+        padding:1rem 0;
+        font-weight: 600;
+        font-size: 1.3rem;
     }
 }
 
@@ -303,5 +308,84 @@ li .empty{
     }
     .chapter-second .right .text-cont h5{
         color: #4d92e2;
+    }
+}
+
+/* Third Chapter design */
+
+.chapter-third {
+    background-color: #eaebec;
+    padding: 2rem 3.5rem;
+}
+.chapter-third .text-item{
+    width:100%;
+    text-align: center;
+    margin-bottom:1rem;
+}
+.chapter-third .courses{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.chapter-third .course-item{
+    min-width: 30rem;
+    margin:1rem;
+    flex:1;
+    background-color: white;
+}
+.chapter-third .image-cont{
+    overflow: hidden;
+
+}
+.chapter-third img{
+    height:auto;
+    width:100%
+}
+.chapter-third .text-cont{
+    width:20rem;
+    padding:1rem;
+    padding-bottom: 1.5rem;
+}
+.chapter-third h5{
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}
+.chapter-third p{
+    padding-bottom: .5rem;
+    line-height: 1.5rem;
+}
+@media only screen and (max-width:960px){
+    .chapter-third {
+        background-color: white;
+        margin: 0rem  auto;
+        padding:2rem 0;
+        border: 1px solid #d8d8d8;
+        display: block;
+    }
+    .chapter-third .text-item{
+        margin-bottom:.5rem;
+    }
+    .chapter-third .courses{
+        flex-direction: column;
+    }
+    .chapter-third .course-item{
+        background-color: #d8d8d8;
+        min-width: 20rem;
+        flex:1 1;
+        margin:0 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .chapter-third .text-cont{
+        padding:1rem;
+        padding-bottom: 1.5rem;
+    }
+    .chapter-third h5{
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+    }
+    .chapter-third p{
+        padding-bottom: .5rem;
+        line-height: 1.5rem;
     }
 }
